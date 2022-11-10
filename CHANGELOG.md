@@ -1,5 +1,79 @@
 # Changelog
 
+## [8.0.0](https://github.com/renawolford6/protobuf-script-build-javascript/compare/protobufjs-v7.1.2...protobufjs-v8.0.0) (2022-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop support for Node 4, 6, 8, 10 (#1764)
+* move command line tool to a new package named protobufjs-cli (#1234)
+* encoding of empty Buffers (#1514)
+
+### Features
+
+* accept unknown enum values in fromObject ([#1793](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1793)) ([c19c310](https://github.com/renawolford6/protobuf-script-build-javascript/commit/c19c310a13dfa158cf80282dce97c2fb43ae2981))
+* add --no-service option for pbjs static target ([#1577](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1577)) ([5b20e40](https://github.com/renawolford6/protobuf-script-build-javascript/commit/5b20e40f7b50c9d2c7157c38440770907080b8fb))
+* add alt-comment CLI option ([#1692](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1692)) ([907b662](https://github.com/renawolford6/protobuf-script-build-javascript/commit/907b66287790b58c0d864be5ecca341d88df4f96))
+* add configurable Root.prototype.fetch ([4531ec8](https://github.com/renawolford6/protobuf-script-build-javascript/commit/4531ec8c02c96ca8e0502ca518b1d1a11b4dcff4))
+* add getTypeUrl method to generated code ([#1463](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1463)) ([497e3b1](https://github.com/renawolford6/protobuf-script-build-javascript/commit/497e3b1542475362a0fdbb4877fbe82c44785d17))
+* add null-defaults option ([#1611](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1611)) ([f869225](https://github.com/renawolford6/protobuf-script-build-javascript/commit/f869225a543e35ab258e80b2602d61fcb8217ec4))
+* add support for buffer configuration ([#1372](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1372)) ([bcc708c](https://github.com/renawolford6/protobuf-script-build-javascript/commit/bcc708cb5612bd542a4729a73272ef9360b7e9ef))
+* allow message.getTypeUrl provide custom typeUrlPrefix ([#1762](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1762)) ([f69ce54](https://github.com/renawolford6/protobuf-script-build-javascript/commit/f69ce54b96e33f52dfef38a6a37a32360c5b831c))
+* better comment parse ([#1419](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1419)) ([f854cba](https://github.com/renawolford6/protobuf-script-build-javascript/commit/f854cba03a5d658e1d758c943bfc7a384dd309a2))
+* move command line tool to a new package named protobufjs-cli ([#1234](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1234)) ([67bcdd7](https://github.com/renawolford6/protobuf-script-build-javascript/commit/67bcdd75148af4f30476250445c76aad2b6cb603))
+* parsed options ([#1256](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1256)) ([0f49062](https://github.com/renawolford6/protobuf-script-build-javascript/commit/0f49062e0475fd421e6da760aa19c0ad6a8ea3eb))
+* prepare initial publication of cli ([#1752](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1752)) ([7a16c05](https://github.com/renawolford6/protobuf-script-build-javascript/commit/7a16c050991aadbd551b6206f3218ae8a03f5208))
+* proto3 optional support ([#1584](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1584)) ([65797f9](https://github.com/renawolford6/protobuf-script-build-javascript/commit/65797f9e75e224babe7c2670c253eb0a7784da09))
+* support parsing of complex options ([#1744](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1744)) ([6d0f248](https://github.com/renawolford6/protobuf-script-build-javascript/commit/6d0f2486efb5053bd9d13e23265e79cc1c0c5b49))
+* update dependencies / general cleanup ([#1356](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1356)) ([40078e8](https://github.com/renawolford6/protobuf-script-build-javascript/commit/40078e8a5dd27c921ec82cdc6c33f364f030a692))
+* valuesOptions for enums ([#1358](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1358)) ([d4fd121](https://github.com/renawolford6/protobuf-script-build-javascript/commit/d4fd1212c967909d293c7c949e8c1d812ec0c0aa))
+
+
+### Bug Fixes
+
+* add import long to the generated .d.ts ([#1802](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1802)) ([e50aa65](https://github.com/renawolford6/protobuf-script-build-javascript/commit/e50aa6546edcb29063215daff28ad038c4125f72))
+* allow file-level options everywhere in the file ([d0e8136](https://github.com/renawolford6/protobuf-script-build-javascript/commit/d0e813649b82899d0b47fd7125d2e227aaece432))
+* allow for an optional semicolon where there is an optional comma in parseOptionValue ([#1571](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1571)) ([399909d](https://github.com/renawolford6/protobuf-script-build-javascript/commit/399909d60839aa4b8fd2452579ffc030e46ba160))
+* allow Windows unc paths to be resolved and normalized ([#1351](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1351)) ([f7b417a](https://github.com/renawolford6/protobuf-script-build-javascript/commit/f7b417a853916da37e030547972a74003657bfb6))
+* **deps:** patch minimatch vulnerability ([#1704](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1704)) ([cace003](https://github.com/renawolford6/protobuf-script-build-javascript/commit/cace003fafa4eeb75dfb1acca533ac04ac75c4a9))
+* **deps:** update dependency glob to v8 ([#1750](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1750)) ([74d96a1](https://github.com/renawolford6/protobuf-script-build-javascript/commit/74d96a18e34b9675e2b495e459786d298f0baee1))
+* **deps:** update dependency long to v5 ([#1751](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1751)) ([aadf5e0](https://github.com/renawolford6/protobuf-script-build-javascript/commit/aadf5e0a2a9b969b61ac6c508710fc804eb2a37d))
+* **deps:** use eslint 8.x ([#1728](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1728)) ([a4406bf](https://github.com/renawolford6/protobuf-script-build-javascript/commit/a4406bf651b6b53ece5f5d4e6d4e21344addb916))
+* do not fail if no process ([#1440](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1440)) ([5d29555](https://github.com/renawolford6/protobuf-script-build-javascript/commit/5d29555a1834cf1e808fb1d9ca85f298cc18f847))
+* do not let setProperty change the prototype ([#1731](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1731)) ([a90457f](https://github.com/renawolford6/protobuf-script-build-javascript/commit/a90457ff7158259b3cccaad3c9f522489cd6058a))
+* **docs:** update CHANGELOG to match format of release-please ([#1376](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1376)) ([72700c7](https://github.com/renawolford6/protobuf-script-build-javascript/commit/72700c7fed5f188d92894d733c03c7355e08274d))
+* drop support for Node 4, 6, 8, 10 ([#1764](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1764)) ([5c5b7ed](https://github.com/renawolford6/protobuf-script-build-javascript/commit/5c5b7edc4b7f424711bb2e06143d4ecb2ce894f8))
+* encoding of empty Buffers ([#1514](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1514)) ([c0958c9](https://github.com/renawolford6/protobuf-script-build-javascript/commit/c0958c9e02122a926badf740e748a1bc9afed111)), closes [#1500](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1500) [#885](https://github.com/renawolford6/protobuf-script-build-javascript/issues/885)
+* es6 export enum ([#1446](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1446)) ([909997c](https://github.com/renawolford6/protobuf-script-build-javascript/commit/909997c12edc8ef28ebb4152f987b5f0aabe9576))
+* extensions broke oneof ([#1789](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1789)) ([601f888](https://github.com/renawolford6/protobuf-script-build-javascript/commit/601f88828845072a21b04fd0696b3ccb2daf568d))
+* fix util.global ([#1441](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1441)) ([7ffa6cf](https://github.com/renawolford6/protobuf-script-build-javascript/commit/7ffa6cf655e7d66d7ede117acb03ad0049d6ac42))
+* fromObject should not initialize oneof members ([#1597](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1597)) ([39a5ed3](https://github.com/renawolford6/protobuf-script-build-javascript/commit/39a5ed3239d7725d94ba6454cccb42fca94cb177))
+* generate valid js code for aliased enum values ([#1801](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1801)) ([148263b](https://github.com/renawolford6/protobuf-script-build-javascript/commit/148263b5ac76bb99c970415a81b300591d621c3d))
+* google.protobuf.Any type_url fixes ([#1068](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1068)) ([d0bc913](https://github.com/renawolford6/protobuf-script-build-javascript/commit/d0bc9135321a67d9f1e174c83fd0d19115a0de44))
+* handling of map entries with omitted key or value ([#1348](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1348)) ([43e4c69](https://github.com/renawolford6/protobuf-script-build-javascript/commit/43e4c699eea8aaaf37dcbe405e553e323b6bc33a))
+* handling properly fields with leading and trailing comments after field with trailing comment ([#1593](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1593)) ([36ee50c](https://github.com/renawolford6/protobuf-script-build-javascript/commit/36ee50ca1d70679a4ff7033950ad59ee3f4b9a12))
+* Import Long types ([8bd7ed9](https://github.com/renawolford6/protobuf-script-build-javascript/commit/8bd7ed9879670d5c09a06e5d0a07e253e2c461b5))
+* Import Long types ([7e49c10](https://github.com/renawolford6/protobuf-script-build-javascript/commit/7e49c1016179671d14760794422e8746635d3a5c))
+* make node detection a bit more forgiving ([#1445](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1445)) ([10d8ef2](https://github.com/renawolford6/protobuf-script-build-javascript/commit/10d8ef275b995e9288de5a629a9564f1f46e4d2d))
+* make parsedOptions appear in method JSON representation ([#1506](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1506)) ([2b902cf](https://github.com/renawolford6/protobuf-script-build-javascript/commit/2b902cf636e885dbebfadea77ea84b71d433a399))
+* npm audit fixes ([2036666](https://github.com/renawolford6/protobuf-script-build-javascript/commit/20366669e5446d1b3d1e11aaaba90cda449ec826))
+* proper relative path to protobufjs in cli ([#1753](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1753)) ([1d619fd](https://github.com/renawolford6/protobuf-script-build-javascript/commit/1d619fdb72db8a38a6ef48f2a92927ad4b6dcd98))
+* properly iterate and return method descriptors ([f007cda](https://github.com/renawolford6/protobuf-script-build-javascript/commit/f007cdaf27405f5be0486b9a69ee63d7a4c4f0cf))
+* properly parse empty messages in options ([#1429](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1429)) ([035afb5](https://github.com/renawolford6/protobuf-script-build-javascript/commit/035afb56582dbd8207ff0f39a29d5311535c16f2))
+* proto3 optional scalars should default to null in reflection API ([#1693](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1693)) ([9b80797](https://github.com/renawolford6/protobuf-script-build-javascript/commit/9b807978e538ec1094bf32615d0bb5da2c5af182))
+* remove unused `@types/long` ([#1785](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1785)) ([b19ea64](https://github.com/renawolford6/protobuf-script-build-javascript/commit/b19ea641351bb0e7aaffad86358070cc9a9ac2c9))
+* replace deprecated String.prototype.substr() ([#1701](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1701)) ([9cd7f28](https://github.com/renawolford6/protobuf-script-build-javascript/commit/9cd7f2825e70259c73a9f3a9b9f71aefdfdf114d))
+* run npm audit fix ([#1208](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1208)) ([701451d](https://github.com/renawolford6/protobuf-script-build-javascript/commit/701451d461dd4ced83ec33aada285f5d3ac25fb3))
+* scope variable for map field to avoid redeclaration ([#1717](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1717)) ([#1718](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1718)) ([791e9cb](https://github.com/renawolford6/protobuf-script-build-javascript/commit/791e9cb5c88fa2636c4b69ec03d0de2bc49729e1))
+* support for nested messages and enums within group blocks ([#1790](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1790)) ([ecfaaec](https://github.com/renawolford6/protobuf-script-build-javascript/commit/ecfaaecc557e89e83b92544b12fb66f18f83f3ba))
+* support for options with `repeated_value: [ "foo", "bar" ]` ([#1574](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1574)) ([e1497b4](https://github.com/renawolford6/protobuf-script-build-javascript/commit/e1497b4d9d67a74fcf4f67964e1001acd262141b))
+* **types:** nested object can be a oneof ([#1812](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1812)) ([b3298ef](https://github.com/renawolford6/protobuf-script-build-javascript/commit/b3298eff81dc661c449353671a8c3d02ac2a864e))
+* **types:** update type deps ([#1776](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1776)) ([0406bd6](https://github.com/renawolford6/protobuf-script-build-javascript/commit/0406bd6fa571fd4a4fbcfa3f43d4e02b7025a54c))
+* typo in pbjs help text ([#1552](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1552)) ([93fa5ef](https://github.com/renawolford6/protobuf-script-build-javascript/commit/93fa5ef606bc6b935fe45b3bc7990244eea970b9))
+* update minimal.js to evade override mistake ([#1742](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1742)) ([f5f5e67](https://github.com/renawolford6/protobuf-script-build-javascript/commit/f5f5e67966783da6e7c48b4b963aba95ddd51e9b))
+* updated isNode check ([#1221](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1221)) ([#1363](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1363)) ([122c802](https://github.com/renawolford6/protobuf-script-build-javascript/commit/122c802d52df9a0cb34d60c55425625964ea867f))
+* utf8 -&gt; utf16 decoding bug on surrogate pairs ([#1486](https://github.com/renawolford6/protobuf-script-build-javascript/issues/1486)) ([82d08ed](https://github.com/renawolford6/protobuf-script-build-javascript/commit/82d08eda74a2361a4e26d175605f24e145f2b124))
+
 ## [7.1.2](https://github.com/protobufjs/protobuf.js/compare/protobufjs-v7.1.1...protobufjs-v7.1.2) (2022-09-22)
 
 
